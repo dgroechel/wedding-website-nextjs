@@ -32,7 +32,7 @@ export default function PlaceCard({ name, image, desc, alt, link }) {
               </Grid>
               <Grid item xs={12}>
                 <div style={{paddingLeft: 10}}>
-                <Link variant="h6" href={link}>Book Now</Link>
+                <Link target="_blank" rel="noopener noreferrer" variant="h6" href={link}>Book Now</Link>
                 </div>
               </Grid>
             </Grid>

@@ -5,10 +5,10 @@ import React from "react";
 export default function PartyCard({ img, name, title, blurb }) {
   return (
     <div>
-      <Card style={{maxWidth: 500}}>
+      <Card style={{ maxWidth: 500 }}>
         <CardMedia>
           <Image
-          layout="responsive"
+            layout="responsive"
             src={img}
             alt={name}
             height={275}
@@ -24,7 +24,7 @@ export default function PartyCard({ img, name, title, blurb }) {
           </Typography>
           <Typography
             align="center"
-            variant="body2"
+            variant="body2" // 98
             color="textSecondary"
             component="p"
             // className={classes.blurb}

@@ -11,11 +11,13 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
+            async
             href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
             rel="stylesheet"
           />
 
           <link
+            async
             href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
             rel="stylesheet"
           ></link>

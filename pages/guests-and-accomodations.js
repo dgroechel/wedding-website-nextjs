@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
 import PlaceCard from "../components/PlaceCard";
+import Link from "next/link";
 
 export default function GuestsAndAccomodations() {
   const placesToStay = [
@@ -34,9 +35,8 @@ export default function GuestsAndAccomodations() {
     <div>
       <Container maxWidth="lg">
         <Grid container spacing={3}>
-          
           <Grid item xs={12}>
-          <div style={{ paddingBottom: 30 }} />
+            <div style={{ paddingBottom: 30 }} />
             <Typography align="center" variant="h2">
               Reccomended Places To Stay
             </Typography>
@@ -44,12 +44,15 @@ export default function GuestsAndAccomodations() {
 
           {placesToStay.map((place) => (
             <Grid item xs={12}>
-              <PlaceCard
-                key={place}
-                name={place.name}
-                image={place.image}
-                desc={place.desc}
-              />
+              <div key={place.name}>
+                <PlaceCard
+                  key={place}
+                  name={place.name}
+                  image={place.image}
+                  desc={place.desc}
+                  link={place.link}
+                />
+              </div>
             </Grid>
           ))}
           <Grid item xs={12}>
@@ -60,19 +63,40 @@ export default function GuestsAndAccomodations() {
           <Grid item xs={12}>
             <Grid container spacing={2}>
               <Grid item xs={12} md={4}>
-                <Button fullWidth variant="contained" color="primary">
-                  AirBnb
-                </Button>
+                <Link
+                  passHref
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.airbnb.com/hilton-head-island-sc/stays"
+                >
+                  <Button fullWidth variant="contained" color="primary">
+                    AirBnb
+                  </Button>
+                </Link>
               </Grid>
               <Grid item xs={12} md={4}>
-                <Button fullWidth variant="contained" color="primary">
-                  VRBO
-                </Button>
+                <Link
+                  passHref
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.vrbo.com/vacation-rentals/usa/south-carolina/hilton-head-island"
+                >
+                  <Button fullWidth variant="contained" color="primary">
+                    VRBO
+                  </Button>
+                </Link>
               </Grid>
               <Grid item xs={12} md={4}>
-                <Button fullWidth variant="contained" color="primary">
-                  The Disney Resort
-                </Button>
+                <Link
+                  passHref
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://hiltonhead.disney.go.com/"
+                >
+                  <Button fullWidth variant="contained" color="primary">
+                    The Disney Resort
+                  </Button>
+                </Link>
               </Grid>
             </Grid>
           </Grid>
