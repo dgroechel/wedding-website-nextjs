@@ -12,7 +12,7 @@ export default function FAQ() {
     {
       question: "Are you still having the wedding with COVID?",
       answer:
-        "Oh man, COVID. Wouldn’t it be great if it was just over already? We are very excited to celebrate with all of you, so we will be closely monitoring the situation in the next few weeks in hopes that we can continue with our wedding and reception as scheduled. With that said, we will be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) If you aren't comfortable attending - we totaly understand! We look forward to celebrating with you when you feel safe",
+        "Oh man, COVID. Wouldn’t it be great if it was just over already? We are very excited to celebrate with all of you, so we will be closely monitoring the situation in the next few weeks in hopes that we can continue with our wedding and reception as scheduled. With that said, we will be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) If you aren't comfortable attending - we totally understand! We look forward to celebrating with you when things return to normal",
     },
     {
       question: "Are children invited?",

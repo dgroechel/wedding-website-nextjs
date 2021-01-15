@@ -32,7 +32,7 @@ export default function wedding() {
       },
     },
     {
-      name: "Costal Discovery Museum - Honey Horn Plantation",
+      name: "Costal Discovery Museum - Honey Horn",
       location: {
         lat: 32.2117,
         lng: -80.74405,
@@ -71,14 +71,6 @@ export default function wedding() {
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography variant="h4">Friday, May 7th</Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography variant="body2">
-                      4:30 PM: Rehersal Dinner in Sea Pines
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12}>
                     <Typography variant="h4">Saturday, May 8th</Typography>
                   </Grid>
                   <Grid item xs={12}>
@@ -90,7 +82,8 @@ export default function wedding() {
                   <Grid item xs={12}>
                     <Typography variant="body2">
                       {" "}
-                      4:30 PM: Cocktail hour @ Honey Horn Plantation
+                      4:30 PM: Cocktail hour @ The Coastal Discovery
+                      Museum/Honey Horn
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>
