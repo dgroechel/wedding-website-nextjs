@@ -49,7 +49,7 @@ export default function wedding() {
       name: "Palmetto Dunes",
       location: {
         lat: 32.17809,
-        lng: -90.72645,
+        lng: -80.72645,
       },
     },
   ];
