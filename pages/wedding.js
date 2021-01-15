@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   Container,
@@ -6,9 +6,15 @@ import {
   Grid,
   CardContent,
 } from "@material-ui/core";
-import { GoogleMap, LoadScript } from "@react-google-maps/api";
+import {
+  GoogleMap,
+  InfoWindow,
+  LoadScript,
+  Marker,
+} from "@react-google-maps/api";
 
 export default function wedding() {
+  const [selected, setSelected] = useState({});
   const center = {
     lat: 32.17889,
     lng: -80.743057,
@@ -16,6 +22,40 @@ export default function wedding() {
   const containerStyle = {
     width: "100%",
     height: "500px",
+  };
+  const weddingLocations = [
+    {
+      name: "Holy Family Catholic Church",
+      location: {
+        lat: 32.15043,
+        lng: -80.76001,
+      },
+    },
+    {
+      name: "Costal Discovery Museum - Honey Horn Plantation",
+      location: {
+        lat: 32.2117,
+        lng: -80.74405,
+      },
+    },
+    {
+      name: "Sea Pines - Harbor Town",
+      location: {
+        lat: 32.13906,
+        lng: -80.81255,
+      },
+    },
+    {
+      name: "Palmetto Dunes",
+      location: {
+        lat: 32.17809,
+        lng: -90.72645,
+      },
+    },
+  ];
+
+  const onSelect = (item) => {
+    setSelected(item);
   };
   return (
     <div>
@@ -68,7 +108,24 @@ export default function wedding() {
                         mapContainerStyle={containerStyle}
                         center={center}
                         zoom={12}
-                      ></GoogleMap>
+                      >
+                        {weddingLocations.map((location) => (
+                          <Marker
+                            key={location.name}
+                            position={location.location}
+                            onClick={() => onSelect(location)}
+                          />
+                        ))}
+                        {selected.location && (
+                          <InfoWindow
+                            position={selected.location}
+                            clickable={true}
+                            onCloseClick={() => setSelected({})}
+                          >
+                            <Typography>{selected.name}</Typography>
+                          </InfoWindow>
+                        )}
+                      </GoogleMap>
                     </LoadScript>
                   </Grid>
                 </Grid>
