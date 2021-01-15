@@ -29,12 +29,6 @@ export default class MyDocument extends Document {
           <Fragment>
             {/* Global Site Tag (gtag.js) - Google Analytics */}
             <script
-              async
-              defer
-              preconnect="true"
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-            />
-            <script
               dangerouslySetInnerHTML={{
                 __html: `
                     window.dataLayer = window.dataLayer || [];
