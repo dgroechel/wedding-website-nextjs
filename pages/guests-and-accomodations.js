@@ -18,7 +18,7 @@ export default function GuestsAndAccomodations() {
       image: "/palmettoDunes.jpg",
       alt: "Palmetto Dunes Resort",
       desc:
-        "Renee's family has vacationed at the Palmetto Dunes Resort for many years. It consists of over 3 miles of beautiful beaches and 3 signature golf courses --- all interconnected by easy to navigate bike paths. Great dining and entertainment options exist across the way in Shelter Cove and there are many beautiful homes to rent and hotels in the area. Discount Code: 21WEDDINGS",
+        "Renee's family has vacationed at the Palmetto Dunes Resort for many years. It consists of over 3 miles of beautiful beaches and 3 signature golf courses --- all interconnected by easy to navigate bike paths. Great dining and entertainment options exist across the way in Shelter Cove and there are many beautiful homes to rent and hotels in the area. Use Discount Code: 21WEDDINGS to save 10%",
       link:
         "https://rentals.palmettodunes.com/hilton-head-vacation-rentals#q=*%3A*",
     },

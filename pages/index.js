@@ -22,7 +22,7 @@ export default function Index() {
           quality={100}
           layout="fill"
           objectFit="cover"
-          alt="Renee DeVivo and David Groechel"
+          alt="Renée DeVivo and David Groechel"
         />
       </div>
      <div>

@@ -9,7 +9,7 @@ export default function HomeCard() {
           <Typography variant="h2" align="center">
             David Groechel 
             & 
-            Renee DeVivo
+            Renée DeVivo
           </Typography>
           <Typography variant="h4" align="center">May 8th, 2020</Typography>
           <Typography variant="h4"  align="center">Hilton Head Island</Typography>
