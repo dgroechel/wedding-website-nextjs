@@ -13,6 +13,7 @@ import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import HomeIcon from "@material-ui/icons/Home";
 import WcIcon from "@material-ui/icons/Wc";
 import HelpIcon from '@material-ui/icons/Help';
+import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import { Box, IconButton, Typography } from "@material-ui/core";
 import Link from "next/link";
 import Image from "next/image";
@@ -116,6 +117,14 @@ export default function NavDrawer() {
                 <PeopleIcon />
               </ListItemIcon>
               <ListItemText>Wedding Party</ListItemText>
+            </ListItem>
+          </Link>
+          <Link className="link" href="/registry">
+            <ListItem button aria-label="Registry">
+              <ListItemIcon>
+                <CardGiftcardIcon />
+              </ListItemIcon>
+              <ListItemText>Registry</ListItemText>
             </ListItem>
           </Link>
           <Link className="link" href="/photos">
