@@ -5,6 +5,8 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "../src/theme";
 import NavBar from "../components/NavBar";
+import ChatWidget from "../components/ChatWidget";
+import '../components/chat.css'
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -31,6 +33,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <NavBar />
         <Component {...pageProps} />
+        <ChatWidget />
       </ThemeProvider>
     </React.Fragment>
   );
