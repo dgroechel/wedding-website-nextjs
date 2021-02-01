@@ -1,3 +1,28 @@
-.rcw-message > .rcw-response {
-    font-family: 'Raleway', sans-serif;;
+.rcw-message {
+  font-family: "Raleway", sans-serif;
+}
+
+.rcw-response {
+    font-family: "Raleway", sans-serif;
+}
+
+.widget-container {
+  height: auto;
+  width: auto;
+  .conversation-container {
+    width: 370px;
+    margin-bottom: 10px;
   }
+  .launcher {
+    margin-top: 0;
+  }
+  @media screen and (max-width: 800px) {
+    height: auto;
+    width: auto;
+    .conversation-container {
+      height: 100vh;
+      width: 100vw;
+      margin-bottom: 0;
+    }
+  }
+}
