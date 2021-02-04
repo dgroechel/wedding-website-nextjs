@@ -11,7 +11,7 @@ export default function HomeCard() {
             & 
             Renée DeVivo
           </Typography>
-          <Typography variant="h4" align="center">May 8th, 2020</Typography>
+          <Typography variant="h4" align="center">May 8th, 2021</Typography>
           <Typography variant="h4"  align="center">Hilton Head Island</Typography>
         </CardContent>
       </Card>
