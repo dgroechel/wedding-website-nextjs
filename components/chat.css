@@ -3,26 +3,28 @@
 }
 
 .rcw-response {
-    font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.widget-container {
+.rcw-widget-container {
   height: auto;
   width: auto;
-  .conversation-container {
-    width: 370px;
-    margin-bottom: 10px;
-  }
-  .launcher {
-    margin-top: 0;
-  }
-  @media screen and (max-width: 800px) {
+}
+.widget-container .conversation-container {
+  width: 370px;
+  margin-bottom: 10px;
+}
+.widget-container .launcher {
+  margin-top: 0;
+}
+@media screen and (max-width: 800px) {
+  .rcw-widget-container {
     height: auto;
     width: auto;
-    .conversation-container {
-      height: 100vh;
-      width: 100vw;
-      margin-bottom: 0;
-    }
+  }
+  .widget-container .conversation-container {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0;
   }
 }

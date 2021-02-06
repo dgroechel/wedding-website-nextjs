@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Drawer from "@material-ui/core/Drawer";
+import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -12,8 +12,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CameraAltIcon from "@material-ui/icons/CameraAlt";
 import HomeIcon from "@material-ui/icons/Home";
 import WcIcon from "@material-ui/icons/Wc";
-import HelpIcon from '@material-ui/icons/Help';
-import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
+import HelpIcon from "@material-ui/icons/Help";
+import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import { Box, IconButton, Typography } from "@material-ui/core";
 import Link from "next/link";
 import Image from "next/image";
@@ -33,15 +33,16 @@ export default function NavDrawer() {
     left: false,
   });
 
-  const toggleDrawer = (side, open) => (event) => {
+  const toggleDrawer = (anchor, open) => (event) => {
     if (
+      event &&
       event.type === "keydown" &&
       (event.key === "Tab" || event.key === "Shift")
     ) {
       return;
     }
 
-    setState({ ...state, [side]: open });
+    setState({ ...state, [anchor]: open });
   };
 
   const sideList = (side) => {
@@ -54,15 +55,14 @@ export default function NavDrawer() {
       >
         <Box>
           <Link href="/">
-              <div style={{padding: 10,  display: "inline-block"}}>
-            <Image
-             
-              width={40}
-              height={40}
-              alt="lighthouse"
-              className="logo"
-              src="/lightHouse.png"
-            />
+            <div style={{ padding: 10, display: "inline-block" }}>
+              <Image
+                width={40}
+                height={40}
+                alt="lighthouse"
+                className="logo"
+                src="/lightHouse.png"
+              />
             </div>
           </Link>
           <Typography style={{ display: "inline-block" }} variant="h4">
@@ -145,9 +145,16 @@ export default function NavDrawer() {
         <MenuIcon aria-label="menu button" />
       </IconButton>
 
-      <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
-        {sideList("left")}
-      </Drawer>
+      <>
+        <SwipeableDrawer
+          anchor="left"
+          open={state.left}
+          onClose={toggleDrawer("left", false)}
+          onOpen={toggleDrawer("left", true)}
+        >
+          {sideList("left")}
+        </SwipeableDrawer>
+      </>
     </div>
   );
 }

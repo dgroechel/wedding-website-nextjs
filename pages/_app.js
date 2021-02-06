@@ -33,7 +33,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <NavBar />
         <Component {...pageProps} />
-        <ChatWidget />
+        <ChatWidget fullScreenMode={false} />
       </ThemeProvider>
     </React.Fragment>
   );
