@@ -1,22 +1,41 @@
 import { Container, Grid, Typography } from "@material-ui/core";
-import React from "react";
-import ChatWidget from "../components/ChatWidget";
+import React, { useState } from "react";
+import RSVPForm from "../components/rsvpForm/RSVPForm";
 
 export default function rsvp() {
+  const [step, setStep] = useState(0);
+
+  const nextStep = () => {
+    setTimeout(() =>setStep(step + 1), 850);
+  };
+
+  const setNo = () => {
+    setStep(4);
+  };
   return (
-    <div>
+    <div style={{ paddingTop: 15 }}>
       <Container maxWidth="md">
-        <Grid container spacing={2}>
+        <Grid
+          align="center"
+          alignItems="center"
+          justify="center"
+          container
+          spacing={4}
+        >
           <Grid item xs={12}>
-            <Typography variant="h2">
-              RSVP to the Wedding with Wilson Below.
+            <Typography align="center" variant="h1">
+              RSVP
             </Typography>
-            <Typography align="center">
-              If you have any issues please email renee.devivo at gmail.com
+            <Typography variant="h6" align="center">
+              If you have any questions please email renee.devivo at gmail.com or visit the FAQ Page.
             </Typography>
           </Grid>
           <Grid item xs={12}>
-              <ChatWidget fullScreenMode={true}></ChatWidget>
+            <RSVPForm
+              nextStep={nextStep}
+              setNo={setNo}
+              step={step}
+            />
           </Grid>
         </Grid>
       </Container>

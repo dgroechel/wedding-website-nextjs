@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { nanoid } from "nanoid";
 import dynamic from "next/dynamic";
 const Widget = dynamic(
   import("react-chat-widget").then((mod) => mod.Widget),
@@ -13,7 +14,9 @@ import axios from "axios";
 const toggleMsgLoader = () =>
   import("react-chat-widget").then((func) => new func.toggleMsgLoader());
 
-export default function ChatWidget({ fullScreenMode }) {
+const sessionId = nanoid();
+
+export default function ChatWidget() {
   useEffect(() => {
     addResponseMessage("Hello Hooman!");
     handleNewUserMessage("initial-intent");
@@ -23,7 +26,7 @@ export default function ChatWidget({ fullScreenMode }) {
     toggleMsgLoader();
     const url =
       "https://us-central1-wedding-chat-303415.cloudfunctions.net/dialogdlow-chat/chatbot";
-    const body = { message: newMessage };
+    const body = { message: newMessage, sessionId };
     const messageResult = await axios.post(url, body);
     await addResponseMessage(messageResult.data.message.fulfillmentText);
     toggleMsgLoader();
@@ -32,7 +35,6 @@ export default function ChatWidget({ fullScreenMode }) {
   return (
     <div>
       <Widget
-        fullScreenMode={fullScreenMode}
         profileAvatar="/wilson.jpg"
         titleAvatar="wilson.jpg"
         handleNewUserMessage={handleNewUserMessage}

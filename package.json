@@ -8,19 +8,29 @@
     "@react-google-maps/api": "^2.1.0",
     "axios": "^0.21.1",
     "clsx": "latest",
+    "formik": "^2.2.6",
+    "formik-material-ui": "^3.0.1",
+    "nanoid": "^3.1.20",
     "next": "latest",
     "next-images": "^1.7.0",
-    "next-transpile-modules": "^6.2.0",
+    "next-transpile-modules": "^6.3.0",
     "prop-types": "latest",
     "react": "latest",
     "react-bnb-gallery": "^1.4.4",
     "react-chat-widget": "^3.0.5",
-    "react-dom": "latest"
+    "react-confetti": "^6.0.0",
+    "react-dom": "latest",
+    "react-transition-group": "^4.4.1",
+    "yup": "^0.32.8"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0"
   }
 }

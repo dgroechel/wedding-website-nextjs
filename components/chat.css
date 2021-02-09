@@ -9,7 +9,6 @@
 .rcw-widget-container {
   height: auto;
   width: auto;
-  min-width: 400px;
 }
 .widget-container .conversation-container {
   width: 370px;
@@ -18,7 +17,7 @@
 .widget-container .launcher {
   margin-top: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   .rcw-widget-container {
     height: auto;
     width: auto;
