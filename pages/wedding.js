@@ -78,6 +78,11 @@ export default function wedding() {
                       {" "}
                       2:00 PM: Wedding Ceremony @ Holy Family Catholic Church
                     </Typography>
+                    <br />
+                    <Typography variant="body2">
+                      {" "}
+                      24 Pope Avenue Hilton Head Island, SC 29928
+                    </Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="body2">
@@ -85,14 +90,21 @@ export default function wedding() {
                       4:30 PM: Cocktail hour @ The Coastal Discovery
                       Museum/Honey Horn
                     </Typography>
+                    <br />
+                    <Typography variant="body2">
+                      {" "}
+                      70 Honey Horn Dr, Hilton Head Island, SC 29926
+                    </Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography variant="body2">6:00 PM: Dinner </Typography>
+                    <Typography variant="body2">
+                      5:30 PM: Reception Begins{" "}
+                      The reception will be entirely outdoors so please dress comfortably.
+                    </Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="body2">
                       10:00PM: End of reception (to save the turtles!).
-                      After-party dependent on COVID
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>

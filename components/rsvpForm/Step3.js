@@ -36,7 +36,7 @@ export default function Step3({ nextStep }) {
           <div style={{ ...defaultStyle, ...transitionStyles[state] }}>
             <Grid item xs={12}>
               <Typography align="center">
-                Do you or your guests have any food allergies?
+                Do you or your guests have any food allergies and/or dietary restrictions?
               </Typography>
             </Grid>
             <Grid item xs={12}>

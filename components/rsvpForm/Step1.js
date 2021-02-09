@@ -59,7 +59,7 @@ export default function Step1({ setFieldValue, nextStep }) {
                 name="guestEmail"
                 variant="outlined"
                 fullWidth
-                label="Please Enter your Email the Invitation Was Sent To"
+                label="Please enter the email your invitation was sent to"
               />
             </Grid>
             <Grid item xs={12}>

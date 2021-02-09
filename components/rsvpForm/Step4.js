@@ -35,9 +35,8 @@ export default function Step4({ nextStep }) {
           <div style={{ ...defaultStyle, ...transitionStyles[state] }}>
             <Grid item xs={12}>
               <Typography align="center">
-                We are doing our best to make sure everyone feels safe with
-                COVID. Is there a group or certain people you feel safer sitting
-                with?{" "}
+                In an attempt to be as mindful as possible of COVID-19, please let us know if there is a group of people you feel most comfortable sitting with at dinner. 
+                {" "}
               </Typography>
             </Grid>
             <Grid item xs={12}>

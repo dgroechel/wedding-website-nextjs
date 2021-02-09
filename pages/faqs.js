@@ -10,9 +10,21 @@ import React from "react";
 export default function FAQ() {
   const faqs = [
     {
-      question: "Are you still having the wedding with COVID?",
+      question: "What about COVID-19?",
       answer:
-        "Oh man, COVID. Wouldn’t it be great if it was just over already? We are very excited to celebrate with all of you, so we will be closely monitoring the situation in the next few weeks in hopes that we can continue with our wedding and reception as scheduled. With that said, we will be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) If you aren't comfortable attending - we totally understand! We look forward to celebrating with you when things return to normal",
+        "We are planning to move forward with our wedding and reception as scheduled. With that said, we want to be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) We completely understand if you decide the personal risk of attending is too great and will look forward to seeing you soon",
+    },
+    {
+      question: "Is there transportation from the reception?",
+      answer: `With everyone stauying in different parts of the island, we are unable to provide transportation. Ubers may not be the best plan for getting home at the end of the night so it may be wise to arrange for transportation ahead of time. Since guests are staying at different spots all over the island, we have talked with transportation companies within the area that can help get you home safely. Additionally, you are welcome to leave a car at Honey Horn. 
+
+      Diamond Transportation 
+      (843) 247 - 2156
+      https://hiltonheadrides.com.com
+
+      Yellow Transportation Hilton Head Island 
+      (843) 686 - 6666 
+      https://www.yellowtransportationhhi.com`,
     },
     {
       question: "Are children invited?",
@@ -27,7 +39,7 @@ export default function FAQ() {
     {
       question: "Are Ubers/Lyfts easily available?",
       answer:
-        "Unfortunately, Uber and Lyft can be hard to come by on the island. Not impossible but wait times can be long so having an alternative transportation plan isn’t a bad idea! We'll have more info on this posted soon",
+        "Unfortunately, Uber and Lyft can be hard to come by on the island particularly at night. Not impossible but wait times can be long so having an alternative transportation plan isn’t a bad idea!."
     },
     {
       question: "Should I fly into Savannah or Hilton Head?",
@@ -37,13 +49,23 @@ export default function FAQ() {
     {
       question: "Why does the reception end so early?",
       answer:
-        "Hilton Head is very committed to protecting wildlife and particularly saving turtles! Therefore, the island has strict ordinances about what time all events must end/bright lights must be off so that the young Loggerhead hatchlings are able to make it to the ocean! Dependent on COVID we will be planning an after party",
+        "Hilton Head is very committed to protecting wildlife and particularly saving turtles! Therefore, the island has strict ordinances about what time all events must end/bright lights must be off so that the young Loggerhead hatchlings are able to make it to the ocean! Dependent on COVID, we will be planning an after party",
     },
     {
       question: "Should I rent a car?",
       answer:
         "Up to you! This all somewhat depends on how long you’re planning to stay, how much you’re looking to explore, and where you are staying. Both Savannah and Hilton Head have many rental car options. Renting bikes is also a fun option since the island has many great bike paths and you can easily ride on the beach!",
     },
+    {
+      question: "Is there parking at the ceremony/reception? ",
+      answer:
+        "Yes, there will be free parking available at both locations. You are welcome to leave your car overnight at Honey Horn if that helps but they request that cars be picked up in the morning by 11 am on Sunday May 9th (when the museum reopens for business).",
+    },
+    {
+      question: "Any recommendations for things to do in between the ceremony and cocktail hour/reception?",
+      answer:
+       "The ceremony should last about an hour. Afterwards, if you’re looking for something to do before the cocktail hour begins at 4:30, a fun idea might be to wander around the Coligny Beach Park and Shopping area, which is fairly close to the church. It’s right by the beach and has lots of cute shops and restaurants. Another idea is to head over to the Coastal Discovery Museum early (reception venue) and explore the grounds/museum. To see more about the CDM, visit https://www.coastaldiscovery.org/.",
+      },
   ];
   return (
     <div style={{paddingTop: 20}}>
@@ -53,7 +75,7 @@ export default function FAQ() {
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Typography align="center" variant="h2">
-                  FAQ's
+                  FAQ&apos;s
                 </Typography>
               </Grid>
               <Grid item xs={12}>
@@ -63,7 +85,7 @@ export default function FAQ() {
                       <Typography variant="h5">{faq.question}</Typography>
                     </div>
                     <div style={{padding: 15}}>
-                      <Typography variant="body2">{faq.answer}</Typography>
+                      <Typography  style={{whiteSpace: 'pre-line'}} variant="body2">{faq.answer}</Typography>
                     </div>
                   </div>
                 ))}
