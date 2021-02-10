@@ -1,14 +1,29 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/core/styles";
 import theme from "../src/theme";
-import { GA_TRACKING_ID } from "../src/gtag";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-162013607-1"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-162013607-1', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             async
@@ -27,23 +42,6 @@ export default class MyDocument extends Document {
             content="David Groechel and Renee DeVivo's wedding website. May 8th, 2021 on Hilton Head Island."
           />
           <meta name="theme-color" content={theme.palette.primary.main} />
-
-          <Fragment>
-            {/* Global Site Tag (gtag.js) - Google Analytics */}
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', '${GA_TRACKING_ID}', {
-                      page_path: window.location.pathname,
-                    });
-                  `,
-              }}
-            />
-          </Fragment>
         </Head>
         <body>
           <Main />
