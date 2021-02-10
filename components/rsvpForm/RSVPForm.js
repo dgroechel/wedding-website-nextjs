@@ -15,7 +15,6 @@ export default function RSVPForm({ step, nextStep, prevStep, setNo }) {
     guestEmail: Yup.string()
       .email("Hmmm that doesn't look like an email")
       .required("Required"),
-    guestNumber: Yup.number().required("Your guest number is required"),
   });
   return (
     <div>

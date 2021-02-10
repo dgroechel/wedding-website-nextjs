@@ -98,8 +98,12 @@ export default function wedding() {
                   </Grid>
                   <Grid item xs={12}>
                     <Typography variant="body2">
-                      5:30 PM: Reception Begins{" "}
-                      The reception will be entirely outdoors so please dress comfortably.
+                      5:30 PM: Reception Begins.{" "}
+                      </Typography>
+                    <br />
+                    <Typography variant="body2">
+                      {" "}
+                      The cocktail hour and reception will be entirely outdoors so please dress comfortably.
                     </Typography>
                   </Grid>
                   <Grid item xs={12}>

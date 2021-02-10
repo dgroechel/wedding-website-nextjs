@@ -12,11 +12,11 @@ export default function FAQ() {
     {
       question: "What about COVID-19?",
       answer:
-        "We are planning to move forward with our wedding and reception as scheduled. With that said, we want to be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) We completely understand if you decide the personal risk of attending is too great and will look forward to seeing you soon",
+        "We are planning to move forward with our wedding and reception as scheduled. With that said, we want to be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) As of February, the church is requiring masks and observing a lower occupancy which we will be well under. We will keep you all posted as May approaches. We completely understand if you decide the personal risk of attending is too great and will look forward to seeing you soon.",
     },
     {
       question: "Is there transportation from the reception?",
-      answer: `With everyone stauying in different parts of the island, we are unable to provide transportation. Ubers may not be the best plan for getting home at the end of the night so it may be wise to arrange for transportation ahead of time. Since guests are staying at different spots all over the island, we have talked with transportation companies within the area that can help get you home safely. Additionally, you are welcome to leave a car at Honey Horn. 
+      answer: `With everyone staying in different parts of the island, we are unable to provide transportation. Ubers may not be the best plan for getting home at the end of the night so it may be wise to arrange for transportation ahead of time. We have talked with transportation companies within the area that can help get you home safely. Additionally, you are welcome to leave a car at Honey Horn. 
 
       Diamond Transportation 
       (843) 247 - 2156
