@@ -12,7 +12,7 @@ export default function FAQ() {
     {
       question: "What about COVID-19?",
       answer:
-        "We are planning to move forward with our wedding and reception as scheduled. With that said, we want to be as mindful as possible of your health and safety and will take whatever precautions possible to make you feel comfortable :) As of February, the church is requiring masks and observing a lower occupancy which we will be well under. We will keep you all posted as May approaches. We completely understand if you decide the personal risk of attending is too great and will look forward to seeing you soon.",
+        "The Town of Hilton Head is still observing a mask mandate in commercial public establishments. Holy Family Catholic Church is still adhering to 50% occupancy (that we will be well under) to allow for proper social distancing and masks are required. The ceremony will last for about an hour. The reception will be entirely outdoors under a pavilion. Catering staff will be masked and all staff will be following standard COVID safety protocols.",
     },
     {
       question: "Is there transportation from the reception?",
